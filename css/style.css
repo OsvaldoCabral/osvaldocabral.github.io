@@ -77,6 +77,11 @@ button#btnParaCelular {
 	line-height: 25px;
 }
 
+#aprendiz, #estagio {
+	color: #ff9440;
+	font-size: 18px;
+}
+
 #formacao {
 	text-align: justify;
 	color: #808080;
@@ -86,16 +91,16 @@ button#btnParaCelular {
 	padding: 20px 0px 0px 0px;
 }
 
+.col-md-3 .thumbnail {
+	height: 340px;
+	text-align: justify;
+}
+
 .col-md-3 .thumbnail img {
 	width: 100px;
 }
 
-.col-md-3 .thumbnail {
-	height: 350px;
-	text-align: justify;
-}
-
 #perfil {
 	background-color: #b9b8a3;
-	color: #393933;
+	color: #666666;
 }
