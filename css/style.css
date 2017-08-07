@@ -70,7 +70,7 @@ button#btnParaCelular {
 	padding: 20px;
 }
 
-#objetivo {
+#objetivo, #contato {
 	color: #e6e6e6;
 	background-color: #393e77;
 	text-align: justify;
@@ -103,4 +103,8 @@ button#btnParaCelular {
 #perfil {
 	background-color: #b9b8a3;
 	color: #666666;
+}
+
+#sesi, #senai {
+	color: rgba(49, 112, 143, 1);
 }
