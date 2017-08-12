@@ -70,7 +70,7 @@ button#btnParaCelular {
 	padding: 20px;
 }
 
-#objetivo, #contato {
+#objetivo, #perfil {
 	color: #e6e6e6;
 	background-color: #393e77;
 	text-align: justify;
@@ -78,7 +78,7 @@ button#btnParaCelular {
 }
 
 #aprendiz, #estagio {
-	color: #ff9440;
+	color: #53c000;
 	font-size: 18px;
 }
 
@@ -92,7 +92,7 @@ button#btnParaCelular {
 }
 
 .col-md-3 .thumbnail {
-	height: 340px;
+	height: 100%;
 	text-align: justify;
 }
 
@@ -100,11 +100,7 @@ button#btnParaCelular {
 	width: 100px;
 }
 
-#perfil {
-	background-color: #b9b8a3;
-	color: #666666;
+#sesi, #senai {
+	color: #53c000;
 }
 
-#sesi, #senai {
-	color: rgba(49, 112, 143, 1);
-}
