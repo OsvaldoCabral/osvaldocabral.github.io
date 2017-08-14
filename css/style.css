@@ -1,11 +1,13 @@
 @CHARSET "UTF-8";
 
 body {
-	background-color: #fefefe;;
+	background-color: #fefefe;
 }
 
 .navbar {
-	margin-bottom: 0px;	
+	position: fixed;
+	z-index: 1;
+	width: 100%;
 	border-radius: 0px;
 }
 
@@ -70,6 +72,10 @@ button#btnParaCelular {
 	padding: 20px;
 }
 
+#objetivo {
+	margin-top: 7pc;
+}
+
 #objetivo, #perfil {
 	color: #e6e6e6;
 	background-color: #393e77;
@@ -91,16 +97,39 @@ button#btnParaCelular {
 	padding: 20px 0px 0px 0px;
 }
 
-.col-md-3 .thumbnail {
-	height: 100%;
-	text-align: justify;
-}
-
 .col-md-3 .thumbnail img {
 	width: 100px;
+}
+
+.thumbnail:hover img, .thumbnail:hover h3, 
+	.thumbnail:hover .progress{
+	-webkit-filter: blur(5px);
+}
+
+.thumbnail p {
+	position: absolute;
+	margin: -210px 0px 0px -13px;
+	opacity: 0;
+	width: calc(100% - 30px);
+	height: 14pc;
+	color: white;
+	padding: 20px;
+	background-color:rgba(28, 46, 56, 0.7);
+	border-radius: 3px;
+	-webkit-transition: 0.3s;
+	text-align: center;
+	user-select: none;
+	cursor: default;
+}
+
+.thumbnail:hover p {
+	opacity: 100;
 }
 
 #sesi, #senai {
 	color: #53c000;
 }
 
+#contato {
+	margin: 0 auto;
+}
