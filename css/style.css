@@ -72,14 +72,13 @@ button#btnParaCelular {
 	padding: 20px;
 }
 
-#objetivo {
+#sobre {	
 	margin-top: 7pc;
 }
 
-#objetivo, #perfil {
+#sobre, #objetivo {
 	color: #e6e6e6;
 	background-color: #393e77;
-	text-align: justify;
 	line-height: 25px;
 }
 
@@ -89,7 +88,7 @@ button#btnParaCelular {
 }
 
 #formacao {
-	text-align: justify;
+	text-align: center;
 	color: #808080;
 }
 
@@ -106,7 +105,7 @@ button#btnParaCelular {
 	-webkit-filter: blur(5px);
 }
 
-.thumbnail p {
+.conteudo {
 	position: absolute;
 	margin: -210px 0px 0px -13px;
 	opacity: 0;
@@ -114,7 +113,7 @@ button#btnParaCelular {
 	height: 14pc;
 	color: white;
 	padding: 20px;
-	background-color:rgba(28, 46, 56, 0.7);
+	background-color:rgba(28, 46, 56, 0.9);
 	border-radius: 3px;
 	-webkit-transition: 0.3s;
 	text-align: center;
@@ -122,14 +121,35 @@ button#btnParaCelular {
 	cursor: default;
 }
 
-.thumbnail:hover p {
+.thumbnail:hover .conteudo {
 	opacity: 100;
 }
 
-#sesi, #senai {
+.conteudo button {
+	border-width: 1px;
+	padding: 10px;
+	border-color: whitesmoke;
+	background-color: #1c2e38;
+}
+
+.conteudo a {
+	text-decoration: none;
+	color: white;
+}
+
+#sesi, #senai, #cidade, #aniversario {
 	color: #53c000;
 }
 
 #contato {
+	text-align: center;
 	margin: 0 auto;
+}
+
+#contato .col-md-1 img {
+	width: 60px;
+}
+
+#contato col-md-1 {
+	text-align: center;
 }
