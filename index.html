@@ -16,14 +16,28 @@
 <!-- Osvaldo CSS -->
 <link href="css/style.css" rel="stylesheet" />
 
+<script src="js/jquery-3.3.1.js"></script>
+
 <!-- Bootstrap JavaScript -->
 <script src="js/bootstrap.js"></script>
 
 <!-- Osvaldo JavaScript -->
 <script src="js/script.js"></script>
 
+<script>
+function funcionaLinks() {
+	var $doc = $('html, body');
+	$('ul li a').click(function() {
+	    $doc.animate({
+	        scrollTop: $($.attr(this, 'href')).offset().top - 120
+	    }, 400);
+	    return false;
+	});
+}
+</script>
+
 </head>
-<body onload="redirecionar()">
+<body onload="funcionaLinks()">
 	<nav class="navbar navbar-default" id="navbarPrincipal">
 	<div class="container-fluid" id="container-header">
 		<div class="navbar-header">

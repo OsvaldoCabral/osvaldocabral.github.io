@@ -11,13 +11,3 @@ function abrirFecharMenu() {
 		btnMenu = "expandir";
 	}
 }
-
-function redirecionar() {
-    $("li a").on('click', function() {
-        $("body").animate({
-            scrollTop: $($(this).attr('href')).offset().top - 120
-		}, 400);
-        abrirFecharMenu();
-        return false;
-    });
-}
