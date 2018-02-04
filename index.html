@@ -34,36 +34,35 @@ function funcionaLinks() {
 	    return false;
 	});
 }
+
 </script>
 
 </head>
 <body onload="funcionaLinks()">
-	<nav class="navbar navbar-default" id="navbarPrincipal">
-	<div class="container-fluid" id="container-header">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed"
-				id="btnParaCelular" data-toggle="collapse"
-				data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span> <span
-					class="icon-bar"></span> <span class="icon-bar"></span> <span
-					class="icon-bar"></span>
-			</button>
-			<a href="https://github.com/osvaldocabral" id="osvaldoCabralNav" target="_blank">
-				<img src="img/rosto.png" title="Meus projetos no GitHub" id="rostoEmNavbar" />
-				Osvaldo
-			</a>
+	<nav class="navbar navbar-default" id="navbarPrincipal" role="navegation">
+		<div class="container-fluid" id="container-header">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" onclick="javascript:abrirFecharMenu()"
+					id="btnParaCelular" data-toggle="collapse" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a href="https://github.com/osvaldocabral" id="osvaldoCabralNav" target="_blank">
+					<img src="img/rosto.png" title="Meus projetos no GitHub" id="rostoEmNavbar" />
+					Osvaldo
+				</a>
+			</div>
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right" id="linksMenu">
+					<li><a onclick="javascript:abrirFecharMenu()" href="#sobre">Sobre</a></li>
+					<li><a onclick="javascript:abrirFecharMenu()" href="#formacao">Formação</a></li>
+					<li><a onclick="javascript:abrirFecharMenu()" href="#objetivo">Objetivo</a></li>
+					<li><a onclick="javascript:abrirFecharMenu()" href="#contato">Contato</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse"
-			id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right" id="linksMenu"
-				onclick="abrirFecharMenu()">
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#formacao">Formação</a></li>
-				<li><a href="#objetivo">Objetivo</a></li>
-				<li><a href="#contato">Contato</a></li>
-			</ul>
-		</div>
-	</div>
 	</nav>
 
 	<div class="container">
